@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfe86c678f.js" crossorigin="anonymous"></script>
+    <title>Sinh nhật 18/11</title>
+</head>
+<body>
+    <header>
+        <!-- <nav class="nav-bar"> 
+            <ul class="nav-list">
+                <li class="nav-items"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-items"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-items"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-items"><a href="#" class="nav-link">Popular</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    
+    <main>
+        <h1 class = "main-head">Sinh Nhật Vui Vẻ!!!</h1>
+
+        <!-- Xem lại phần quà -->
+        <button type = "button" id = "btnRewatch">
+            <i class="fa-solid fa-gift fa-2x"></i>
+        </button>
+
+        <!-- Viết điều ước của chị -->
+        <button type = "button" id = "btnWrite">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+        </button>
+
+        <!-- Nút hiển thị lại điều ước đã viết -->
+        <button type = "button" id = "flexSend">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+        </button>
+
+        <!--- Background Sinh Nhật --->
+
+        <div class = "main-ctn">
+            <!--- Chữ Happy Birthday có animation --->
+            <div class = "happy-birthday-ctn">
+                <h1 class = "happy-birthday"><i><span class = "ant1" id = "happy-birthday1">H</span><span class = "ant1" id = "happy-birthday2">a</span><span class = "ant1" id = "happy-birthday3">p</span><span class = "ant1" id = "happy-birthday4">p</span><span class = "ant1" id = "happy-birthday5">y</span></i></h1>
+                <h1 class = "happy-birthday"><i><span class = "ant2" id = "happy-birthday6">B</span><span class = "ant2" id = "happy-birthday7">i</span><span class = "ant2" id = "happy-birthday8">r</span><span class = "ant2" id = "happy-birthday9">h</span><span class = "ant2" id = "happy-birthday10">t</span><span class = "ant2" id = "happy-birthday11">d</span><span class = "ant2" id = "happy-birthday12">a</span><span class = "ant2" id = "happy-birthday13">y</span></i></h1>
+
+                <!--- Nút đọc thư --->
+                <div class = "buttonjs">
+                    <button type = "button" id = "wish-button">Chị có lá thư nè 💌</button>
+                </div>
+            </div>
+
+            <!-- Ảnh của người được tổ chức sinh nhật -->
+            <div class = "img-ctn">
+                <img src = "Avatar.jpg" alt = "hvyiu" style = "
+                    position: relative;
+                    top: -40px;
+
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                    animation: opacity 3s;
+                    animation-delay: 1s;
+                    animation-direction: alternate;
+                    animation-fill-mode: forwards;
+                    opacity: 0;">
+                <!-- CSS animation chưa hoàn thành -->
+                <div class = "name-wrapper">
+                    <h2 name = "name"><i>Đặng Hà Vy</i></h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Nền mờ đi khi mở lá thư -->
+        <div id = "backgroundBlind"></div>
+
+        <!--- Lá thư --->
+        <div class = "letters" id = "lettersJS">
+            <div class = "envelope" id = "outer-envelope">
+                <div class = "flap"></div>
+                <img src = "Trái tim.png" alt = "Dấu trái tim" class = "img-png" id = "envelope-btn">
+                <p class = "to">
+                    Gửi: <i>Hà Vy</i>
+                </p>
+            </div>
+            
+            <div class = "paper">
+                <h1 class = "head-paper" style = 
+                "margin-top: 5px;
+                text-align: center;
+                font-size: 1.5em;">Thư Sinh Nhật 💌</h1>
+                <p id = "to">To <span style = "color: #f25989">Hà Vy</span>,</p>
+                <p class = "content-in">- Hôm nay chính là ngày sinh nhật của chị á, và em luôn yêu quý những ngày mà quan trọng với chị.</p>
+                <p class = "content-in">- Em chúc chị có một ngày sinh nhật vui vẻ, luôn tươi cười và xinh đẹp.</p>
+                <p class = "content-in">- Sinh nhật chị là dịp rất đặc biệt với em, em đã lập trình ra trang web này vì muốn đây sẽ là món quà độc nhất mà chị nhận được trong ngày sinh nhật.</p>
+                <p class = "content-in">- Thật ra không chỉ có trang web này với lá thư chúc mừng sinh nhật này đâu, em còn chuẩn bị quà cho chị bằng cách chị sẽ chọn quà mà chị thích.</p>
+                <p class = "content-in">- Chị hãy nhấn nút nhận quà dưới góc bên phải để chọn quà nhaa.</p>
+                <p class = "content-in">- Yêu chị nhìu.</p>
+                <p id = "from">-From <span style = "color: rgb(39, 174, 174)">Khang</span>-</p>
+                <button type = " button" id = "gift-btn">Nhận quà 🎁</button>
+            </div>
+            
+            <button type = "button" class = "closeBtn" id = "closeLetters">X</button>
+            
+        </div>
+
+        <div class = "gift" id = "gift">
+            <button type = "button" class = "closeBtn" id = "closeGift">X</button>
+            <div class = "choose-ctn">
+
+
+                <div class = "chooseGift">
+
+                    <h2 class = "header-choose">Hãy chọn món quà mà chị thích</h2>
+
+                    <div class = "chrt">
+                        <img src = "Aoi1.jpg" class = "chooseImg" data-gift = "Aoi1">
+                        <img src = "Aoi2.jpg" class = "chooseImg" data-gift = "Aoi2">
+                        <img src = "Aoi3.jpg" class = "chooseImg" data-gift = "Aoi3">
+                        <img src = "Aoi4.jpg" class = "chooseImg" data-gift = "Aoi4">
+                    </div>
+                   
+                    <div class = "chrt">
+                        <img src = "Alice.jpg" class = "chooseImg" data-gift = "Alice">
+                        <img src = "Butterfly.jpg" class = "chooseImg" id = "Had" style = "filter: grayscale(100%)">
+                        <img src = "Điêu thuyền1.jpg" class = "chooseImg" data-gift = "Điêu thuyển1">
+                        <img src = "Helen2.jpg" class = "chooseImg" data-gift = "Helen2">
+                    </div>
+                   
+                    <div class = "chrt">
+                        <img src = "Ilumia1.jpg" class = "chooseImg" data-gift = "Iluamia1">
+                        <img src = "Ishar.jpg" class = "chooseImg" data-gift = "Ishar">
+                        <img src = "Qi1.jpg" class = "chooseImg" data-gift = "Qi1">
+                        <img src = "Qi2.jpg" class = "chooseImg" data-gift = "Qi2">
+                    </div>
+                   
+                    <div class = "chrt">
+                        <img src = "Sephera1.jpg" class = "chooseImg" data-gift = "Sephera1">
+                        <img src = "Sephera2.jpg" class = "chooseImg" data-gift = "Sephera2">
+                        <img src = "Violet1.jpg" class = "chooseImg" data-gift = "Violet1">
+                        <img src = "Bonnie1.jpg" class = "chooseImg" data-gift = "Yue1">
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- Xác nhận lấy quà hay không -->
+         <div id = "confirmParents">
+             <div class = "confirm" id = "confirm">
+             <p style = "font-size: 1.2em; margin-top: 5px;">Xác nhận chọn món quà này chứ?</p>
+                <button type = "button" id = "confirmNo">Xem xét lại</button>
+                <button type = "button" id = "confirmYes">Có</button>
+            </div>
+        </div>
+
+        <!-- Phần quà đã chọn -->
+        <div id = "flexGift">
+
+            <button type = "button" id = "closeReWatch">X</button>
+
+            <div id = "GiftIn">
+                <h2>Chúc mừng sinh nhật 🎉🎉🎉 Chị đã nhận được skin này!</h2>
+                <img id = "chosenGiftImg" src = "" alt = "Phần quà chị đã chọn">
+            </div>
+
+        </div>
+
+        <!-- lá thư chị chi viết -->
+        <div id = "send">
+
+            <button type = "button" id = "closeWrite">X</button>
+
+            <div id = "sendTo">
+                <h1>Hãy viết điều ước của chị dưới dạng lá thư nho</h1>
+                <textarea id = "wishText" placeholder = "Hãy viết điều ước dưới dạng lá thư hoặc dì cũm được hếc nho">To: </textarea>
+                <button type = "button" id = "saveWish">Xác nhận</button>
+            </div>
+
+        </div>
+
+        <div id = "reWrite">
+
+            <button type = "button" id = "closeReWrite">X</button>
+
+            <div id = "ResendTo">
+                <h1>Điều Ước Của Chị</h1>
+                <div id="ResendToContent"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src = "index.js"></script>
+
+</body>
+</html>
